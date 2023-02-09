@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+
+{% extends "basic_app/base.html" %}
+
+  {% block title_block %}
+  Hompage
+  {% endblock %}
+
+  {% block body_block%}
+    {% load poll_extras %}
+    <h1>WELCOME TO INDEX</h1>
+    <h2>Here an example</h2>
+    <h1>{{ text2 }}</h1>
+    <h1>{{ text|cut_out:"world"}}</h1>
+    <h1>{{ text|lower_all }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
+    {% endblock %}
